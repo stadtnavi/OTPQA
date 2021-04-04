@@ -52,7 +52,7 @@ IGNORED_DATES = set((
 TIME = '14:00:00'
 
 # generate test date on a recent/upcoming monday. Use a fixed work day to keep results comparable
-cdate = date.(2021, 8, 10)
+cdate = date(2021, 8, 10)
 
 while cdate.strftime('%Y-%m-%d') in IGNORED_DATES or cdate.strftime('-%m-%d') in IGNORED_DATES:
     cdate += timedelta(days=1)
