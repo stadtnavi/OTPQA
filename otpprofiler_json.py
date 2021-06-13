@@ -75,6 +75,7 @@ for router, rsites in ((tr, router_sites[tr]) for tr in test_routers):
         print('total:', totaln, 'failed:', nfailed, 'none:', nnone, 'ratio:', ratio)
 
         report_html = ''.join(hreport.main(None, response_json, site['name']))
+        gen_geojson.main(response_json)
 
         f.write('<h1>%s</h1>' % site['name'])
         f.write(report_html)
