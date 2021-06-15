@@ -226,6 +226,18 @@ To be compared with the other file same using `id_tuple` for each request
 
 Note the otpprofiler.py adds mode TRANSIT to the request if the request's mode is BICYCLE or WALK and the distance is too long
 
+### To generate a new requests.json file
+Create routes.csv file with the following format
+```csv
+name;lat;lon;notes
+```
+- Run gen_requests_otpprofiler_json.py
+   - Generate requests_routes.json file
+   - Make sure to change csv file name in line 73
+   - Make sure to change output json file name in line 82
+   - Make sure to add the modes you want to be tested against in line 33
+- Run otpprofiler_json.py with the correct file name 
+- otpprofiler_json.py will generate the geojson.json file to be able to visualize the routes in goeojson.io
 
 
 
