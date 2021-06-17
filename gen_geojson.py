@@ -83,10 +83,9 @@ def main(input_blob=None):
             else:
                 foundRoute = True
 
-            data['features'].append(getNewLine(response['from'], response['to'],response['url'], foundRoute))
+            data['features'].append(getNewLine(response['from'], response['to'], response['url'], foundRoute))
 
-    print("Create geojson file complete")
-    print(data)
-    file = open("geojson.json", "w")
+    print("Create geojson file successfully")
+    file = open("herrenberg/geojson.json", "w")
     json.dump(data, file, indent=2)
     file.close()

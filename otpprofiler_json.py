@@ -7,11 +7,11 @@ import os
 import otpprofiler
 import json
 import hreport
-
+import gen_geojson
 
 RATIO_LIMIT = 0.17
 
-f = open('otpqa_router_requests.json')
+f = open('herrenberg/requests_routes.json')
 router_sites = json.load(f)
 f.close()
 
@@ -43,12 +43,12 @@ for router, rsites in ((tr, router_sites[tr]) for tr in test_routers):
             'date': otpprofiler.DATE,
             'time': '14:00',
             'retry': 5,
-            'count': int(os.getenv('OTPQA_COUNT',200)),
+            'count': int(os.getenv('OTPQA_COUNT',22)),
             'notes': None,
             'fast': False,
             'profile': False,
             'host': router_url,
-            'itineraries': 1,
+            'itineraries': 3,
             'output': False,
             'modes': None
 

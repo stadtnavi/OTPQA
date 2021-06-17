@@ -4,7 +4,7 @@ import json
 
 def generateRequestsFromEndpoints(endpoints,TEST_ALL_MODES=True,random=False):
     json_out = {}
-    json_out['name'] = "herrenberg.qa.stadtnavi.eu/reiseplan"
+    json_out['name'] = "herrenberg.beta.stadtnavi.eu/reiseplan"
     json_out['eps'] = 100
     json_out['hits_percentile'] = 50
     json_out['idsite'] = "4"
@@ -29,7 +29,7 @@ def generateRequestsFromEndpoints(endpoints,TEST_ALL_MODES=True,random=False):
     if TEST_ALL_MODES:
         # (mode, walk, min)
         # OTP clamps walk distance to max 15km
-        modes = [ ("WALK,TRANSIT", 10000, "QUICK"), ("WALK,TRANSIT", 10000, "SAFE") ] # More WALK, TRANSIT
+        modes = [ ("WALK,TRANSIT", 2000, "QUICK"), ("WALK,TRANSIT", 2000, "SAFE") ] # More WALK, TRANSIT
         # modes.append( ("BICYCLE,TRANSIT", 15000, "QUICK") )
         # modes.append( ("CAR,WALK", 2000, "QUICK") )
         # modes.append( ("BICYCLE", 15000, "SAFE") )
@@ -70,8 +70,8 @@ def generateRequestsFromEndpoints(endpoints,TEST_ALL_MODES=True,random=False):
 
 
 if __name__ == '__main__':
-    endpoints = open("herrenberg/routes.csv")
-    reader = csv.DictReader(endpoints,delimiter=";")
+    endpoints = open("herrenberg/feedback_routes.csv")
+    reader = csv.DictReader(endpoints, delimiter=";")
 
     endpoints = list(reader)
     json_out = {}
@@ -79,6 +79,6 @@ if __name__ == '__main__':
 
     json_requests = generateRequestsFromEndpoints(endpoints)
     json_out['herrenberg_routes_test_suite'].append(json_requests)
-    fpout = open("requests_routes.json","w")
+    fpout = open("herrenberg/requests_routes.json", "w")
     json.dump(json_out, fpout, indent=2 )
     fpout.close()
