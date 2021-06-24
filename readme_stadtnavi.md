@@ -98,21 +98,8 @@ Each request must have 2 endpoints corresponding to it (origin, destination)
 
 Run otpprofiler_json.py with param https://api.staging.stadtnavi.eu/routing/v1/router/ which returns xml by default.
 
-Change 
-```python
-if (not "/otp/routers" in host) and (not "/routing/v1/routers" in host):
-```
-to 
-```python
-if (not "/otp/routers" in host) and (not "/routing/v1/router" in host): 
-```
-in line 466 in file otpprofiler.py so the url in not altered
 
-
-I'm still investigating how to use https://api.dev.stadtnavi.eu/otp/routers/default/
-as it return json by default
-
-A new otpqa_report_key-in-requests.html will be generated with the results.
+A new otpqa_report_`key-in-requests`.html will be generated with the results.
 
 ### otpprofiler.py:
 
@@ -236,7 +223,7 @@ name;lat;lon;notes
    - Make sure to change csv file name in line 73
    - Make sure to change output json file name in line 82
    - Make sure to add the modes you want to be tested against in line 33
-- Run otpprofiler_json.py with the correct file name 
+- Run otpprofiler_json.py with the correct file name and correct count
 - otpprofiler_json.py will generate the geojson.json file to be able to visualize the routes in goeojson.io
 
 
