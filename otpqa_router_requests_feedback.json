@@ -1,0 +1,251 @@
+{
+  "herrenberg_feedback": [
+    {
+      "name": "herrenberg.qa.stadtnavi.eu/reiseplan",
+      "eps": 100,
+      "hits_percentile": 50,
+      "idsite": "4",
+      "router": [],
+      "requests": {
+        "requests": [
+          {
+            "min": "SAFE",
+            "arriveBy": false,
+            "maxWalkDistance": 8000,
+            "mode": "WALK,CAR,TRANSIT,BICYCLE",
+            "time": "14:00:00",
+            "id": 0,
+            "typical": false
+          }
+        ],
+        "endpoints": [
+          {
+            "name": "Herrenberg Bahnhof",
+            "notes": null,
+            "random": false,
+            "lon": 8.86307270000001,
+            "lat": 48.593861700000005,
+            "id": 0
+          },
+          {
+            "name": "Gäufelden",
+            "notes": null,
+            "random": false,
+            "lon": 8.8229748,
+            "lat": 48.5534259,
+            "id": 1
+          },
+          {
+            "name": "Schönbuchturm",
+            "notes": null,
+            "random": false,
+            "lon": 8.909352661789013,
+            "lat": 48.60396942584515,
+            "id": 2
+          },
+          {
+            "name": "Herrenberger Marktplatz",
+            "notes": null,
+            "random": false,
+            "lon": 8.8703739,
+            "lat": 48.5965153,
+            "id": 3
+          },
+          {
+            "name": "Bahnhof Herrenberg",
+            "notes": null,
+            "random": false,
+            "lon": 8.86307270000001,
+            "lat": 48.593861700000005,
+            "id": 4
+          },
+          {
+            "name": "Ehbühl Herrenberg",
+            "notes": null,
+            "random": false,
+            "lon": 8.88262,
+            "lat": 48.5990579,
+            "id": 5
+          },
+          {
+            "name": "Nebringen",
+            "notes": null,
+            "random": false,
+            "lon": 8.8486774,
+            "lat": 48.5628035,
+            "id": 6
+          },
+          {
+            "name": "Herrenberg",
+            "notes": null,
+            "random": false,
+            "lon": 8.8674715,
+            "lat": 48.595557,
+            "id": 7
+          },
+          {
+            "name": "Zeppelinstraße, 71083 Herrenberg",
+            "notes": "Issue",
+            "random": false,
+            "lon": 8.867168,
+            "lat": 48.6001544,
+            "id": 8
+          },
+          {
+            "name": "Stadtwerke, Stuttgarter Straße 90, 71083 Herrenberg",
+            "notes": null,
+            "random": false,
+            "lon": 8.875496720680218,
+            "lat": 48.60471945,
+            "id": 9
+          },
+          {
+            "name": "Notariat, Stadtarchiv, Marienstraße 21, 71083 Herrenberg",
+            "notes": null,
+            "random": false,
+            "lon": 8.87396884087168,
+            "lat": 48.592540549999995,
+            "id": 10
+          },
+          {
+            "name": "Marktplatz, 71083 Herrenberg",
+            "notes": null,
+            "random": false,
+            "lon": 8.870212611582073,
+            "lat": 48.59635685,
+            "id": 11
+          },
+          {
+            "name": "Ludwigsburg, Bahnhofstraße, 71638 Ludwigsburg",
+            "notes": null,
+            "random": false,
+            "lon": 8.870305559488784,
+            "lat": 48.59650256604047,
+            "id": 12
+          },
+          {
+            "name": "Rheinlandstraße, 71636 Ludwigsburg",
+            "notes": null,
+            "random": false,
+            "lon": 9.1702107,
+            "lat": 48.890269,
+            "id": 13
+          },
+          {
+            "name": "Heslach Vogelrain",
+            "notes": "5 excel",
+            "random": false,
+            "lon": 9.138242,
+            "lat": 48.7536011,
+            "id": 14
+          },
+          {
+            "name": "Bahnhof Herrenberg",
+            "notes": "5 excel",
+            "random": false,
+            "lon": 8.86307270000001,
+            "lat": 48.593861700000005,
+            "id": 15
+          },
+          {
+            "name": "Heslach Vogelrain",
+            "notes": "5 excel",
+            "random": false,
+            "lon": 9.138242,
+            "lat": 48.7536011,
+            "id": 16
+          },
+          {
+            "name": "Bahnhof Herrenberg",
+            "notes": "5 excel",
+            "random": false,
+            "lon": 8.86307270000001,
+            "lat": 48.593861700000005,
+            "id": 17
+          },
+          {
+            "name": "Steinerner Weg, 71134 Aidlingen",
+            "notes": "6 excel",
+            "random": false,
+            "lon": 8.8873906,
+            "lat": 48.6580831,
+            "id": 18
+          },
+          {
+            "name": "Eisenbahnstraße, 71083 Herrenberg",
+            "notes": "6  excel",
+            "random": false,
+            "lon": 8.8635394,
+            "lat": 48.5932927,
+            "id": 19
+          },
+          {
+            "name": "Eisenbahnstraße, 71083 Herrenberg",
+            "notes": "7  excel",
+            "random": false,
+            "lon": 8.8635394,
+            "lat": 48.5932927,
+            "id": 20
+          },
+          {
+            "name": "Gäufelden, Bahnhofstraße, 71126 Gäufelden-Nebringen",
+            "notes": "7  excel",
+            "random": false,
+            "lon": 8.8492627,
+            "lat": 48.5600234,
+            "id": 21
+          },
+          {
+            "name": "Asternweg, 71083 Herrenberg",
+            "notes": "8 excel",
+            "random": false,
+            "lon": 8.8553651,
+            "lat": 48.6058398,
+            "id": 22
+          },
+          {
+            "name": "Eisenbahnstraße, 71083 Herrenberg",
+            "notes": "8 excel",
+            "random": false,
+            "lon": 8.8703003,
+            "lat": 48.5961809,
+            "id": 23
+          },
+          {
+            "name": "Egelhaafstraße, 70565 Stuttgart",
+            "notes": "9 excel",
+            "random": false,
+            "lon": 9.1102313,
+            "lat": 48.7172155,
+            "id": 24
+          },
+          {
+            "name": "Stuttgarter Straße, 71083 Herrenberg",
+            "notes": "9 excel",
+            "random": false,
+            "lon": 8.8701104,
+            "lat": 48.5969686 ,
+            "id": 25
+          },
+          {
+            "name": "Primelweg, 71083 Herrenberg",
+            "notes": "10 excel",
+            "random": false,
+            "lon": 8.8573711,
+            "lat": 48.6046245,
+            "id": 26
+          },
+          {
+            "name": "Tübingen Hbf, Hegelstraße, 72072 Tübingen",
+            "notes": "10 excel",
+            "random": false,
+            "lon": 9.0552876,
+            "lat": 48.5155801,
+            "id": 27
+          }
+        ]
+      },
+      "min_samples": 2
+    }
+  ]
+}

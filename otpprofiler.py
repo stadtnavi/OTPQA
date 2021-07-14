@@ -462,9 +462,9 @@ def run(connect_args, requests_json=None):
         else:
             url = "http://" + host
 
-        # check if url path requires completion
-        if (not "/otp/routers" in host) and (not "/routing/v1/routers" in host):
-            url = url + "/routing/v1/routers/hsl"
+
+
+
 
         if not url.endswith('/'):
             url = url + "/"
